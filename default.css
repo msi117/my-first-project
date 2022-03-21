@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(215, 10%, 44%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  
+  body {
+    background: var(--Very-Dark-Blue);
+    font-family: 'Overpass', sans-serif;
+    width: 1440px;    
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    top: 50%;
+    left: 50%;
+    margin: -150px -150px;
+    background-color: var(--Dark-Blue);
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    overflow: hidden;
+}
+.circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--Medium-Grey);
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.circle img {
+    width: 12px;
+    height: 12px;
+    align-self: center;
+
+}
+
+.text {
+    width: inherit;
+    margin-bottom: 0px;
+}
+
+h3{
+    margin-left: 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--White);    
+
+}
+
+p{
+    
+    font-size: 15px;
+    margin: 0 15px;
+    line-height: 1.1;
+    color: var(--Light-Grey);
+}
+
+.numbers {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+.num {
+    text-align: center;
+    line-height: 38px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--Medium-Grey);
+    margin: 8px;
+    color: var(--Light-Grey);
+    font-size: 12px;
+    
+}
+
+.num-selected {
+    background-color: white;
+}
+.num:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.submit {
+
+    margin: 0 auto;
+}
+
+.btn{
+    margin-top: 10px;
+    text-decoration: none;
+    border: none;
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.btn:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.thankyou {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.thank-image {
+    margin-top: 15px;
+}
+img {
+    margin: 15px;
+    width: 100px;
+    align-items: center;
+}
+
+h6 {
+    
+    background-color: var(--Medium-Grey);
+    color: var(--Orange);
+    font-size: 12px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+.text-display h3{
+    text-align: center;
+}
+.text-display p{
+    text-align: center;
+    font-size: 12px;
+}
